@@ -1,0 +1,251 @@
+/* ========================================
+   STATS
+======================================== */
+
+.stats-section {
+    background: var(--secondary-color); /* rojo */
+    padding: 60px 40px;
+}
+
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    flex: 1;
+}
+
+.stat-number {
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+}
+
+/* ========================================
+   CLASES
+======================================== */
+.clases-section {
+    padding: 80px 40px;
+    background: var(--secondary);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+}
+
+.section-header p {
+    color: rgba(255,255,255,0.6);
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+
+
+.clases-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjeta */
+.clase-card {
+    background: #23272f;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clase-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* Imagen */
+.clase-img {
+    position: relative;
+}
+
+.clase-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: top
+}
+
+.card-infantil img  { object-position: center 15%; }
+
+/* Badge sobre la imagen */
+.clase-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--secondary-color);
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.clase-badge.urgente {
+    background: #FFD93D;
+    color: #000;
+}
+
+/* Contenido */
+.clase-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.clase-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+.clase-detalle {
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.clase-info p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.5;
+}
+
+.clase-link {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 6px;
+    transition: letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+.clase-link:hover {
+    color: var(--secondary-color);
+    letter-spacing: 0.5px;
+}
+
+.equipo-badge {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 700px;
+    margin: 50px auto 0;
+    background: rgba(235, 22, 22, 0.1);
+    border: 1px solid rgba(235, 22, 22, 0.3);
+    border-radius: 12px;
+    padding: 20px 28px;
+}
+
+.trofeo {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.equipo-badge p {
+    color: rgba(255,255,255,0.8);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.equipo-badge strong {
+    color: white;
+}
+
+.clases-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/* Mobile */
+@media (max-width: 992px) {
+    .clases-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* ========================================
+        STATS MOBILE
+    ======================================== */
+    .stats-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .stat-divider {
+        width: 60px;
+        height: 1px;
+    }
+
+    .stat-number {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* ========================================
+        CLASES
+    ======================================== */
+    .clases-section {
+        padding: 60px 20px;
+    }
+
+    .clases-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .equipo-badge {
+        flex-direction: column;
+        text-align: center;
+    }
+}

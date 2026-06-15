@@ -1,0 +1,51 @@
+/* ========================================
+   DENTAL CLINIC COLOR PALETTE - Based on Dra. Elizabeth Logo
+======================================== */
+:root {
+    --primary-color: #191c24;
+    --secondary-color: #EB1616;
+    --text-color: #ffffff;
+    --background-color: #000000;
+}
+
+/* ========================================
+   RESET & BASE
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--background-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--secondary-color);
+    --bs-btn-border-color: var(--secondary-color);
+    --bs-btn-hover-bg: #c41212;
+    --bs-btn-hover-border-color: #c41212;
+    --bs-btn-active-bg: #a00f0f;
+    --bs-btn-active-border-color: #a00f0f;
+    --bs-btn-focus-shadow-rgb: 235, 22, 22;
+}
+
+.highlight {
+    color: var(--secondary-color);
+}
