@@ -201,10 +201,192 @@
     margin-top: 40px;
 }
 
+/* ========================================
+   MAESTROS
+======================================== */
+.maestros {
+    padding: 100px 40px;
+    background: #0a0a0a;
+}
+
+
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    color: var(--secondary-color);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.maestros-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.maestro-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #1a1a1a;
+    transition: transform 0.3s ease;
+}
+
+.maestro-card:hover {
+    transform: translateY(-6px);
+}
+
+.maestro-quote {
+    color: #ffffff;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 16px;
+    border-left: 2px solid var(--secondary-color);
+}
+
+.maestro-desc {
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.maestro-image {
+    position: relative;
+    height: 340px;
+}
+
+.maestro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: top;
+}
+
+.maestro-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 60px 20px 16px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+}
+
+.maestro-badge {
+    display: block;
+    color: rgba(255,255,255,0.85);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.maestro-overlay h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.maestro-info {
+    padding: 18px 20px 0;
+}
+
+.maestro-tag {
+    display: inline-block;
+    background: rgba(188, 83, 83, 0.15);
+    color: var(--secondary-color);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.maestro-info p {
+    color: rgba(255,255,255,0.65);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.maestro-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 14px 0;
+}
+
+.maestro-social {
+    display: flex;
+    gap: 16px;
+}
+
+.maestro-social a {
+    color: rgba(255,255,255,0.5);
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.maestro-social a:hover {
+    color: var(--secondary-color);
+}
+
+.maestro-link {
+    color: var(--secondary-color);
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.maestro-link i {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.maestro-link:hover i {
+    transform: translateX(3px);
+}
+
+.maestros-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
 
 /* Mobile */
 @media (max-width: 992px) {
     .clases-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maestros-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -226,11 +408,28 @@
     .stat-number {
         font-size: 42px;
     }
+
+    /* ========================================
+        MAESTROS MOBILE
+    ======================================== */
+
+    .maestros {
+        padding: 60px 20px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .maestros-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
 }
 
 @media (max-width: 480px) {
     /* ========================================
-        CLASES
+        CLASES MOBILE
     ======================================== */
     .clases-section {
         padding: 60px 20px;
