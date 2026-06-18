@@ -201,8 +201,6 @@
     background: #0a0a0a;
 }
 
-
-
 .section-header {
     text-align: center;
     margin-bottom: 60px;
@@ -372,6 +370,99 @@
     margin-top: 50px;
 }
 
+/* ========================================
+   TESTIMONIOS
+======================================== */
+.testimonios {
+    padding: 100px 40px;
+    background: #000000;
+}
+
+.testimonios-widget {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 200px;
+}
+
+.testimonios .section-header{
+    margin-bottom: 0px;
+}
+
+/* ========================================
+   FAQ
+======================================== */
+.faq {
+    padding: 100px 40px;
+    background: #000000;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    padding: 24px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: var(--secondary-color);
+}
+
+.faq-question i {
+    font-size: 20px;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+    margin-left: 16px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    color: rgba(255,255,255,0.65);
+    font-size: 15px;
+    line-height: 1.7;
+    padding-bottom: 24px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+@media (max-width: 768px) {
+    .faq {
+        padding: 60px 20px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+    }
+}
 
 /* Mobile */
 @media (max-width: 992px) {
@@ -417,6 +508,27 @@
         grid-template-columns: 1fr;
         gap: 24px;
     }
+
+    /* ========================================
+        TESTIMONIOS MOBILE
+    ======================================== */
+
+    .testimonios {
+        padding: 60px 20px;
+    }
+
+
+    /* ========================================
+        FAQ MOBILE
+    ======================================== */
+    .faq {
+        padding: 60px 20px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+    }
+    
 }
 
 @media (max-width: 480px) {
