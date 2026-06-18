@@ -71,14 +71,20 @@
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
     background: none;
+    border: none;
+    cursor: pointer;
     padding: 5px;
 }
 
 .mobile-menu-toggle span {
     width: 25px;
     height: 3px;
-    background: var(--text-gray);
+    background: var(--secondary-color);
     margin: 3px 0;
     border-radius: 3px;
     transition: 0.3s;
