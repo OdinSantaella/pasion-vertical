@@ -1,4 +1,3 @@
-
 export function toggleMobileMenu() {
     const navMenu = document.getElementById('navMenu');
     const menuToggle = document.querySelector('.mobile-menu-toggle');
