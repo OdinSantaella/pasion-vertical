@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 
@@ -65,27 +66,26 @@
     <main>
         <!-- HERO SECTION -->
          <section id="home" class="hero" aria-label="Sección principal">
-
-            <div class="hero-content">
-               <div class="hero-text display-2">
-                    <h1>
-                        Aprende a bailar en Tlaxcala.<br>
-                        Sin miedo. Sin experiencia. <span class="highlight">Solo pasión.</span>
-                    </h1>
-                    <h2 class="hero-subtitle">
-                        Salsa, bachata y más. Para personas que nunca han bailado 
-                        y para los que quieren mejorar. Ambiente sin juicios.
-                    </h2>
-                    <a href="https://api.whatsapp.com/message/4KH3YITVK3HPL1?autoload=1&app_absent=0" 
-                    class="btn btn-primary hero-cta-button" target="_blank">
-                        ¡Quiero mi clase gratis!
-                    </a>
-                </div>
-
-                <div class="hero-image">
-                    <img src="img/pasion_team_3.jpg" alt="Equipo de baile">
-                </div>
+            <div class="hero-image">
+                <video autoplay muted loop playsinline>
+                <source src="img/hero_background.mp4" type="video/mp4">
+                </video>
             </div>
+            <div class="hero-text display-2">
+                <h1>
+                    Aprende a bailar<br>
+                    Sin miedo
+                    <br>Sin experiencia
+                    <br><span class="highlight">Solo pasión</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Salsa, bachata y más. Para personas que nunca han bailado 
+                    y para los que quieren mejorar. Ambiente sin juicios.
+                </h2>
+                <a href="https://api.whatsapp.com/message/4KH3YITVK3HPL1?autoload=1&app_absent=0" 
+                class="btn btn-primary hero-cta-button" target="_blank">
+                    ¡Quiero mi clase gratis!
+                </a>
         </section>
         <section id="stats" class="stats-section">
             <div class="stats-container">
@@ -131,7 +131,7 @@
                         <h3>Ritmos Latinos</h3>
                         <span class="clase-detalle">Salsa · Bachata · Cumbia</span>
                         <p>Los ritmos más populares de Latinoamérica. Ven solo o con pareja, sin experiencia previa.</p>
-                        <a href="clases.html#latinos" class="clase-link">Ver horarios →</a>
+                        <a href="clases.html#latinos" class="clase-link">Preguntar por WhatsApp →</a>
                     </div>
                 </div>
 
@@ -144,7 +144,7 @@
                         <h3>Vals XV Años</h3>
                         <span class="clase-detalle">Coreografía personalizada</span>
                         <p>Tu momento especial merece el mejor baile. Trabajamos contigo desde cero hasta el día de tu fiesta.</p>
-                        <a href="clases.html#vals" class="clase-link">Ver horarios →</a>
+                        <a href="clases.html#vals" class="clase-link">Preguntar por WhatsApp →</a>
                     </div>
                 </div>
 
@@ -157,7 +157,7 @@
                         <h3>Clases Infantiles</h3>
                         <span class="clase-detalle">Ballet · Jazz · Urbano · Teatro · Gimnasia</span>
                         <p>Disciplina, expresión y diversión para los más pequeños en un ambiente seguro y divertido.</p>
-                        <a href="clases.html#infantil" class="clase-link">Ver horarios →</a>
+                        <a href="clases.html#infantil" class="clase-link">Preguntar por WhatsApp →</a>
                     </div>
                 </div>
 
@@ -170,7 +170,7 @@
                         <h3>Fusión y Urbano</h3>
                         <span class="clase-detalle">K-Pop · Árabe · Tahitiano · Hip Hop</span>
                         <p>Explora culturas y movimientos únicos. Para quienes quieren ir más allá de lo convencional.</p>
-                        <a href="clases.html#fusion" class="clase-link">Ver horarios →</a>
+                        <a href="clases.html#fusion" class="clase-link">Preguntar por WhatsApp →</a>
                     </div>
                 </div>
 
@@ -358,4 +358,46 @@
 
     <!-- JavaScript Libraries -->
     <script type="module" src="js/main.js"></script>
+    <footer class="footer">
+        <div class="footer-main">
+
+            <div class="footer-brand">
+            <a href="#inicio">
+                <img src="img/PasionLogoBlanco.png" alt="Pasión Vertical Logo">
+            </a>
+            <p>Academia de baile en Tlaxcala. Formando bailarines y campeones desde hace más de 15 años.</p>
+            </div>
+
+            <div class="footer-col">
+            <h4>Navegación</h4>
+            <a href="#inicio">Inicio</a>
+            <a href="#clases">Clases</a>
+            <a href="#maestros">Maestros</a>
+            <a href="#sucursales">Sucursales</a>
+            <a href="#contacto">Contacto</a>
+            </div>
+
+            <div class="footer-col">
+            <h4>Clases</h4>
+            <a href="#">Ritmos Latinos</a>
+            <a href="#">Vals XV Años</a>
+            <a href="#">Clases Infantiles</a>
+            <a href="#">Fusión y Urbano</a>
+            <a href="#">Equipo de Competencia</a>
+            </div>
+
+            <div class="footer-col">
+            <h4>Contacto</h4>
+            <p><i class="ti ti-map-pin"></i> Av. Juárez, Miraflores, 90114 Ocotlán, Tlax.</p>
+            <p><i class="ti ti-mail"></i> info@pasionvertical.com.mx</p>
+            <p><i class="ti ti-brand-whatsapp"></i> +52 (246) 110-7471</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 Pasión Vertical. Todos los derechos reservados.</span>
+            <a href="#">Powered by OdinStudio</a>
+        </div>
+    </footer>
 </body></html>
